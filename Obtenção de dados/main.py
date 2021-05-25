@@ -1,4 +1,4 @@
-from pathlib import Path
+import os
 import pyaudio as pa
 import wave
 
@@ -7,10 +7,11 @@ CHANNELS = 1
 RATE = 44100 # Em Hz
 CHUNK = 1024 * 2
 RECORD_SECONDS = 5
-# BASE_PATH = '/Obtenção de dados/Saídas/0 - Regime Normal/' # Pasta onde serão armazenados os aúdios
-WAVE_OUTPUT_FILENAME = "recordedFile.wav"
+BASE_PATH = os.path.dirname(os.path.realpath(__file__)) # Pasta base
 
-print(WAVE_OUTPUT_FILENAME)
+OUTPUT_FOLDER_PATH = BASE_PATH + '/Saídas/1 - Som ambiente/' # Pasta onde serão armazenados os aúdios
+TEST_TYPE = OUTPUT_FOLDER_PATH + '/0 - Regime Normal/' # Tipo de teste que será executado
+WAVE_OUTPUT_FILENAME = TEST_TYPE + 'recordedFile.wav' # Nome do arquivo
 
 # Criar uma instância do PyAudio
 audio = pa.PyAudio()
