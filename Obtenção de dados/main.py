@@ -24,7 +24,6 @@ stream = audio.open(format=FORMAT,
                     frames_per_buffer=CHUNK)
 
 # Iniciando a gravação
-input(f'Pressione enter para iniciar a gravação de {RECORD_SECONDS} segundos')
 print("Gravando...")
 
 Recordframes = []
