@@ -14,7 +14,7 @@ Para entender como o mesmo foi criado bem como os conceitos utilizados leia o do
 
 `$ sudo apt-get update`
 
-`$ sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0`
+`$ sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 python3-dev python3-tk`
 
 # Pré configuração em ambiente windows
 
@@ -24,7 +24,7 @@ Para baixar o instalador acesse: www.python.org
 
 ## Instalação das dependências do projeto
 
-`$ pip install -r requeriments.txt`
+`$ pip install -r requirements.txt`
 
 ## Rodar a aplicação
 
