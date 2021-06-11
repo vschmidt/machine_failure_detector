@@ -49,6 +49,7 @@ dataInt = struct.unpack(str(CHUNK) + 'h', data)
 
 # Configurações da figura
 fig, (ax1, ax2, ax3) = plt.subplots(3)
+fig.canvas.manager.set_window_title('Monitorador de equipamento')
 
 x = np.arange(0, 2*CHUNK, 2)
 x_fft = np.linspace(0, RATE, CHUNK)
