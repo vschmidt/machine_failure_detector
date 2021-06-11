@@ -57,6 +57,10 @@ x_fft = np.linspace(0, RATE, CHUNK)
 line, = ax1.plot(x, np.random.rand(CHUNK), 'r')
 line_fft, = ax2.semilogx(x_fft, np.random.rand(CHUNK))
 
+ax1.set_title("Amplitude")
+ax2.set_title("Espectograma")
+fig.tight_layout()
+
 ax1.set_ylim(-60000, 60000)
 ax1.set_xlim(0, CHUNK)
 
