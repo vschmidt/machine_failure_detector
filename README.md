@@ -16,7 +16,7 @@ Para entender como o mesmo foi criado bem como os conceitos utilizados leia o do
 
 `$ sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 python3-dev python3-tk`
 
-# Pré configuração em ambiente windows
+# Pré configuração em ambiente windows (Compatibilidade não testada)
 
 Certifique-se de ter a versão 3.7 (ou superior) do Python instalada na sua máquina bem como o gerenciador de pacotes pip (embutido no instalador do Python).
 
