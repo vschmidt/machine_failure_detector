@@ -26,6 +26,10 @@ Para baixar o instalador acesse: www.python.org
 
 `$ pip install -r requirements.txt`
 
+### Instalar pyAudio
+
+`$ pip install .\libs\PyAudio-0.2.11-cp38-cp38-win32.whl`
+
 ## Rodar a aplicação
 
 ### No Windows
