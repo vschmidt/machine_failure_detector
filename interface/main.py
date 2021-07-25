@@ -5,7 +5,7 @@ import pyaudio as pa
 import struct
 import matplotlib.pyplot as plt
 
-from sklearn.svm import NuSVC
+from sklearn.tree import DecisionTreeClassifier
 
 # Parâmetros
 CHUNK = 1024 * 2
@@ -15,7 +15,7 @@ RATE = 44100  # Em Hz
 
 # Carregar o modelo gerado
 path = 'Análise dos dados/Preditores/'
-file_name = 'classificador_som_indústrial.pkl'
+file_name = 'classificador.pkl'
 
 print(os.path.isfile(path + file_name))
 
